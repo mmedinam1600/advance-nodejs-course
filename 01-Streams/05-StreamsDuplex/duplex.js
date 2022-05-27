@@ -16,10 +16,12 @@ const report = new Duplex({
   },
 
   read(size) {
+
   },
 
   final(callback) {
     this.push(null);
+    callback();
   }
 
 });

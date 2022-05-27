@@ -3,13 +3,13 @@ const fs = require("fs");
 
 console.time("Response time");
 
-// Less efficient
+// Less efficient in large files
 // for (let i = 0; i <= 5; i++) {
 //   fs.readFileSync('file.txt', 'utf8');
 // }
 
 
-// More efficient
+// More efficient in large files
 for (let i = 0; i <= 5; i++) {
   const streamWriter = fs.createReadStream("file.txt", {
     encoding: "utf8"

@@ -1,7 +1,7 @@
 const fs = require('fs');
 
-let content = "1234567890";
-let iterations = 15;
+let content = "123";
+let iterations = 5;
 
 const streamReader = fs.createWriteStream("./files/my_file.txt");
 
